@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.css.map">
+        <link rel="stylesheet" href="../css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="../css/blueimp-gallery-indicator.css">
+        <link rel="stylesheet" href="../css/blueimp-gallery.min.css.map">
+        <link rel="stylesheet" href="../css/blueimp-gallery.css">
+        <script src="../js/blueimp-gallery.min.js"></script>
+
+        <style>
+             html {
+            scroll-behavior: smooth;
+        }
+            img{
+                margin:30px;
+            }
+            .single_service:hover {
+                    box-shadow: 0px 5px 30px rgba(0,0,0,0.1);
+                    position: relative;
+                    z-index: 100;
+                    transform: translate(0, -10px);
+                    cursor: pointer;
+                }
+
+            .single_service{
+                width:200px;
+                height:200px;
+            }
+            @media only screen 
+            and (min-device-width: 325px) 
+            and (max-device-width: 812px) 
+             { 
+                .single_service{
+                width:600px;
+                height:600px;
+            }
+            }
+            #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1A73E8;height:135px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="layout.html"><span><img src="../Images/shiva.svg" height="auto" width="auto"></span></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="layout.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="layout.html#categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="layout.html#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+        </div>
+    </nav>
+        <div class="container">
+            <div class="col-md-12 pt-5 mt-5">
+                <h4 class="text-center font-weight-bold">CROWNS</h4>
+                    <div id="links" class="row text-center">
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_1.jpg" >
+                                <img src="../Images/crown/crown_1.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_2.jpg" >
+                                <img src="../Images/crown/crown_2.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_3.jpg" >
+                                <img src="../Images/crown/crown_3.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_4.jpg" >
+                                <img src="../Images/crown/crown_4.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_5.jpg" >
+                                <img src="../Images/crown/crown_5.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_6.jpg" >
+                                <img src="../Images/crown/crown_6.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_7.jpg" >
+                                <img src="../Images/crown/crown_7.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_8.jpg" >
+                                <img src="../Images/crown/crown_8.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_9.jpg" >
+                                <img src="../Images/crown/crown_9.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_10.jpg" >
+                                <img src="../Images/crown/crown_10.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_11.jpg" >
+                                <img src="../Images/crown/crown_11.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_12.jpg" >
+                                <img src="../Images/crown/crown_12.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_13.jpg" >
+                                <img src="../Images/crown/crown_13.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_14.jpg" >
+                                <img src="../Images/crown/crown_14.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_15.jpg" >
+                                <img src="../Images/crown/crown_15.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_16.jpg" >
+                                <img src="../Images/crown/crown_16.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_17.jpg" >
+                                <img src="../Images/crown/crown_18.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_18.jpg" >
+                                <img src="../Images/crown/crown_18.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_19.jpg" >
+                                <img src="../Images/crown/crown_19.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_20.jpg" >
+                                <img src="../Images/crown/crown_20.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_21.jpg" >
+                                <img src="../Images/crown/crown_21.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_22.jpg" >
+                                <img src="../Images/crown/crown_22.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_23.jpg" >
+                                <img src="../Images/crown/crown_23.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_24.jpg" >
+                                <img src="../Images/crown/crown_24.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_25.jpg" >
+                                <img src="../Images/crown/crown_25.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_26.jpg" >
+                                <img src="../Images/crown/crown_26.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_27.jpg" >
+                                <img src="../Images/crown/crown_27.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_28.jpeg" >
+                                <img src="../Images/crown/crown_28.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_29.jpg" >
+                                <img src="../Images/crown/crown_29.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_30.jpg" >
+                                <img src="../Images/crown/crown_30.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_31.jpg" >
+                                <img src="../Images/crown/crown_31.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_32.jpg" >
+                                <img src="../Images/crown/crown_32.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_33.jpg" >
+                                <img src="../Images/crown/crown_33.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_34.jpg" >
+                                <img src="../Images/crown/crown_34.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_35.jpg" >
+                                <img src="../Images/crown/crown_35.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_36.jpg" >
+                                <img src="../Images/crown/crown_36.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_37.jpg" >
+                                <img src="../Images/crown/crown_38.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_38.jpg" >
+                                <img src="../Images/crown/crown_38.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_39.jpg" >
+                                <img src="../Images/crown/crown_39.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_40.jpeg" >
+                                <img src="../Images/crown/crown_40.jpeg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_41.jpg" >
+                                <img src="../Images/crown/crown_41.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_42.jpg" >
+                                <img src="../Images/crown/crown_42.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_43.jpg" >
+                                <img src="../Images/crown/crown_43.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_44.jpg" >
+                                <img src="../Images/crown/crown_44.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_45.jpg" >
+                                <img src="../Images/crown/crown_45.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_46.jpg" >
+                                <img src="../Images/crown/crown_46.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_47.jpg" >
+                                <img src="../Images/crown/crown_47.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_48.jpg" >
+                                <img src="../Images/crown/crown_48.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-xs-12" class="mx-auto">
+                            <a href="../Images/crown/crown_49.jpg" >
+                                <img src="../Images/crown/crown_49.jpg" class="single_service" height="200px" width="200px" alt="Alt 1" />
+                              </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+            
+        <div id="blueimp-gallery" class="blueimp-gallery" aria-label="image gallery" aria-modal="true" role="dialog">
+            <div class="slides" aria-live="polite"></div>
+            <h3 class="title"></h3>
+            <a class="prev" aria-controls="blueimp-gallery" aria-label="previous slide"
+                aria-keyshortcuts="ArrowLeft"  style="color: beige;">‹</a>
+            <a class="next" aria-controls="blueimp-gallery" aria-label="next slide" aria-keyshortcuts="ArrowRight"  style="color: beige;">›</a>
+            <a class="close" aria-controls="blueimp-gallery" aria-label="close" aria-keyshortcuts="Escape" style="color: beige;">×</a>
+            <a class="play-pause" aria-controls="blueimp-gallery" aria-label="play slideshow" aria-keyshortcuts="Space"
+                aria-pressed="false" role="button"></a>
+            <ol class="indicator"></ol>
+        </div>
+</div>
+</div>
+<script>
+//     blueimp.Gallery(document.getElementById('example').getElementsByTagName('a'), {
+//   container:'#blueimp-gallery-carousel',
+//   carousel:true
+// })
+
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event
+    var target = event.target || event.srcElement
+    var link = target.src ? target.parentNode : target
+    var options = { index: link, event: event }
+    var links = this.getElementsByTagName('a')
+    blueimp.Gallery(links, options)
+  }
+  var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+</script>
+</body>
+</html>
